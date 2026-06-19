@@ -1,0 +1,118 @@
+{
+  "site_content": [
+    { "key": "hero_title", "value": "Xəyallarınıza açılan qapı" },
+    { "key": "hero_subtitle", "value": "Etibarlı inşaat, keyfiyyətli həyat!" },
+    { "key": "phone_1", "value": "051 888 55 99" },
+    { "key": "phone_2", "value": "070 500 29 49" },
+    { "key": "address", "value": "Tovuz rayonu" },
+    { "key": "instagram", "value": "https://www.instagram.com/aras.insaat/" }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "Tovuz Modern Villa",
+      "description": "Tovuz rayonunda inşa edilən 2 mərtəbəli modern üslublu fərdi yaşayış evi.",
+      "image_url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      "region": "Tovuz",
+      "created_at": "2026-06-19T12:00:00Z"
+    },
+    {
+      "id": "2",
+      "title": "Qazax Klassik Ev",
+      "description": "Qazax rayonunda ənənəvi arxitektura elementləri ilə tikilmiş gözəl həyət evi.",
+      "image_url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+      "region": "Qazax",
+      "created_at": "2026-06-19T12:05:00Z"
+    },
+    {
+      "id": "3",
+      "title": "Ağstafa Premium Bağ Evi",
+      "description": "Ağstafada geniş həyətyanı sahəsi olan, hovuzlu müasir bağ evi.",
+      "image_url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+      "region": "Ağstafa",
+      "created_at": "2026-06-19T12:10:00Z"
+    },
+    {
+      "id": "4",
+      "title": "Şəmkir Avanqard Villa",
+      "description": "Şəmkir şəhərində avanqard üslubda dizayn olunmuş lüks villa.",
+      "image_url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "region": "Şəmkir",
+      "created_at": "2026-06-19T12:15:00Z"
+    }
+  ],
+  "pricing_packages": [
+    {
+      "id": "1",
+      "name": "Komfort Paket",
+      "price": 250,
+      "features": [
+        "Divar kağızları (orta keyfiyyət)",
+        "Asma tavan işləri",
+        "Laminat döşəmə",
+        "Santexnika və elektrik quraşdırılması",
+        "Komplekt təmir materialları daxil"
+      ],
+      "whatsapp_text": "Salam, Komfort Paket təmir paketi haqqında məlumat almaq istəyirəm.",
+      "order_index": 0
+    },
+    {
+      "id": "2",
+      "name": "Premium Paket",
+      "price": 310,
+      "features": [
+        "Yüksək keyfiyyətli divar kağızları",
+        "Alçıpan və dartma tavan dizaynları",
+        "Premium sinif laminat",
+        "Keyfiyyətli santexnika və elektrik materialları",
+        "Hər otaqda xüsusi işıqlandırma"
+      ],
+      "whatsapp_text": "Salam, Premium Paket təmir paketi haqqında məlumat almaq istəyirəm.",
+      "order_index": 1
+    },
+    {
+      "id": "3",
+      "name": "VIP Paket",
+      "price": 395,
+      "features": [
+        "İtalyan boya və divar kağızları",
+        "Dizaynlı tavan işləri (Led daxil)",
+        "Parket və ya keyfiyyətli kafel-metlax döşəmə",
+        "İsti döşəmə sistemi",
+        "Avropa istehsalı santexnika və elektrik elementləri"
+      ],
+      "whatsapp_text": "Salam, VIP Paket təmir paketi haqqında məlumat almaq istəyirəm.",
+      "order_index": 2
+    },
+    {
+      "id": "4",
+      "name": "Luxury Paket",
+      "price": 500,
+      "features": [
+        "Fərdi dizayn layihəsi",
+        "Mərmər və qranit işləri",
+        "Premium parket döşəmə",
+        "İtalyan divar panelləri və dekorativ boyalar",
+        "Akustik tavan və xüsusi gizli işıqlandırma",
+        "Bütün materiallar xaricdən idxal"
+      ],
+      "whatsapp_text": "Salam, Luxury Paket təmir paketi haqqında məlumat almaq istəyirəm.",
+      "order_index": 3
+    },
+    {
+      "id": "5",
+      "name": "Gold Paket",
+      "price": 810,
+      "features": [
+        "Ultra lüks fərdi interyer dizayn layihəsi",
+        "Tam təbii mərmər və oniks örtüklər",
+        "Ekzotik ağacdan mozaik parket",
+        "Ağıllı Ev (Smart Home) sistemi quraşdırılması",
+        "Eksklüziv İtalyan mebelləri üçün hazırlıq",
+        "Ömürlük zəmanət və 5 illik pulsuz servis dəstəyi"
+      ],
+      "whatsapp_text": "Salam, Gold Paket təmir paketi haqqında məlumat almaq istəyirəm.",
+      "order_index": 4
+    }
+  ]
+}
