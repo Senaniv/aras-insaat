@@ -100,7 +100,7 @@ INSERT INTO public.site_content (key, value) VALUES
 ('phone_1', '051 888 55 99'),
 ('phone_2', '070 500 29 49'),
 ('address', 'Tovuz rayonu'),
-('instagram', 'https://www.instagram.com/aras.insaat/')
+('instagram', 'https://www.instagram.com/aras_inshaat/')
 ON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value;
 
 -- Seed Pricing Packages

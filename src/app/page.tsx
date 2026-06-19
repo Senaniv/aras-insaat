@@ -355,7 +355,7 @@ export default async function Page() {
               <p className="flex items-center gap-1">
                 Sayt
                 <a 
-                  href="https://www.instagram.com/pixel.digital.services/" 
+                  href="https://www.instagram.com/pixel_digital_services?igsh=MTB1b25kZWQ4YWFrZQ%3D%3D" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-brand-orange hover:underline font-bold transition-colors"
