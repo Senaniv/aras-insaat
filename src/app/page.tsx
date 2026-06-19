@@ -303,7 +303,7 @@ export default async function Page() {
                     <MapPin size={16} />
                   </span>
                   <div>
-                    <span className="text-xs text-gray-500 uppercase font-semibold block">Qərargahımız</span>
+                    <span className="text-xs text-gray-500 uppercase font-semibold block">Ünvanımız</span>
                     <span className="font-semibold text-gray-200">{address}</span>
                   </div>
                 </li>
@@ -330,7 +330,7 @@ export default async function Page() {
 
               {/* Social Media Circles */}
               <div className="space-y-2">
-                <span className="text-xs text-gray-500 uppercase font-semibold block">Bizə qoşulun</span>
+                <span className="text-xs text-gray-500 uppercase font-semibold block">Bizə istəklərinizi yazın</span>
                 <div className="flex items-center gap-3">
                   <a
                     href={instagramUrl}
