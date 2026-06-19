@@ -83,7 +83,7 @@ export default async function Page() {
 
         {/* Smooth Curved Bottom Divider (Dark to Cream) */}
         <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0]">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[120%] md:w-full h-[40px] md:h-[80px] fill-brand-cream">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[150%] min-w-[150%] animate-wave h-[40px] md:h-[80px] fill-brand-cream">
             <path d="M0,0 C300,100 900,0 1200,80 L1200,120 L0,120 Z"></path>
           </svg>
         </div>
@@ -131,7 +131,7 @@ export default async function Page() {
 
         {/* Wavy transition (Cream to Dark Gray) */}
         <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0]">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[120%] md:w-full h-[40px] md:h-[80px] fill-brand-dark-light">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[150%] min-w-[150%] animate-wave h-[40px] md:h-[80px] fill-brand-dark-light">
             <path d="M0,0 C300,80 900,0 1200,100 L1200,120 L0,120 Z"></path>
           </svg>
         </div>
@@ -195,7 +195,7 @@ export default async function Page() {
 
         {/* Wavy transition (Dark Gray to Cream) */}
         <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0]">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[120%] md:w-full h-[40px] md:h-[80px] fill-brand-cream">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[150%] min-w-[150%] animate-wave h-[40px] md:h-[80px] fill-brand-cream">
             <path d="M0,0 C300,100 900,0 1200,80 L1200,120 L0,120 Z"></path>
           </svg>
         </div>
@@ -226,7 +226,7 @@ export default async function Page() {
 
         {/* Wavy transition (Cream to Dark Footer) */}
         <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0]">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[120%] md:w-full h-[40px] md:h-[80px] fill-brand-dark">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[150%] min-w-[150%] animate-wave h-[40px] md:h-[80px] fill-brand-dark">
             <path d="M0,0 C300,80 900,0 1200,100 L1200,120 L0,120 Z"></path>
           </svg>
         </div>

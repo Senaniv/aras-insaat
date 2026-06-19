@@ -42,6 +42,24 @@ body {
   line-height: 0;
 }
 
+/* Animated Wave Dividers */
+@keyframes wave-motion {
+  0% {
+    transform: translateX(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-12%) scaleY(1.08);
+  }
+  100% {
+    transform: translateX(0) scaleY(1);
+  }
+}
+
+.animate-wave {
+  animation: wave-motion 14s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
 .wave-divider svg {
   position: relative;
   display: block;
