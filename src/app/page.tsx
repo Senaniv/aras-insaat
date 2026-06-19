@@ -82,7 +82,7 @@ export default async function Page() {
         </div>
 
         {/* Animated Double-Layered Wave Divider (Dark to Cream) */}
-        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0] h-[45px] md:h-[75px]">
+        <div className="absolute bottom-[-2px] left-0 right-0 w-full overflow-hidden leading-[0] h-[45px] md:h-[75px]">
           <svg viewBox="0 0 2400 120" preserveAspectRatio="none" className="absolute bottom-0 left-0 w-full wave-animated-slow fill-brand-cream opacity-40">
             <path d="M0,60 Q150,100 300,60 T600,60 T900,60 T1200,60 T1500,60 T1800,60 T2100,60 T2400,60 L2400,120 L0,120 Z" />
           </svg>
@@ -133,7 +133,7 @@ export default async function Page() {
 
 
         {/* Animated Double-Layered Wave Divider (Cream to Dark Gray) */}
-        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0] h-[45px] md:h-[75px]">
+        <div className="absolute bottom-[-2px] left-0 right-0 w-full overflow-hidden leading-[0] h-[45px] md:h-[75px]">
           <svg viewBox="0 0 2400 120" preserveAspectRatio="none" className="absolute bottom-0 left-0 w-full wave-animated-slow fill-brand-dark-light opacity-40">
             <path d="M0,60 Q150,100 300,60 T600,60 T900,60 T1200,60 T1500,60 T1800,60 T2100,60 T2400,60 L2400,120 L0,120 Z" />
           </svg>
@@ -200,7 +200,7 @@ export default async function Page() {
         </div>
 
         {/* Animated Double-Layered Wave Divider (Dark Gray to Cream) */}
-        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0] h-[45px] md:h-[75px]">
+        <div className="absolute bottom-[-2px] left-0 right-0 w-full overflow-hidden leading-[0] h-[45px] md:h-[75px]">
           <svg viewBox="0 0 2400 120" preserveAspectRatio="none" className="absolute bottom-0 left-0 w-full wave-animated-slow fill-brand-cream opacity-40">
             <path d="M0,60 Q150,100 300,60 T600,60 T900,60 T1200,60 T1500,60 T1800,60 T2100,60 T2400,60 L2400,120 L0,120 Z" />
           </svg>
@@ -234,7 +234,7 @@ export default async function Page() {
         </div>
 
         {/* Animated Double-Layered Wave Divider (Cream to Dark Footer) */}
-        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0] h-[45px] md:h-[75px]">
+        <div className="absolute bottom-[-2px] left-0 right-0 w-full overflow-hidden leading-[0] h-[45px] md:h-[75px]">
           <svg viewBox="0 0 2400 120" preserveAspectRatio="none" className="absolute bottom-0 left-0 w-full wave-animated-slow fill-brand-dark opacity-40">
             <path d="M0,60 Q150,100 300,60 T600,60 T900,60 T1200,60 T1500,60 T1800,60 T2100,60 T2400,60 L2400,120 L0,120 Z" />
           </svg>
