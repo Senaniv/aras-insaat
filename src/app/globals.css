@@ -42,24 +42,6 @@ body {
   line-height: 0;
 }
 
-/* Animated Wave Dividers */
-@keyframes wave-motion {
-  0% {
-    transform: translateX(0) scaleY(1);
-  }
-  50% {
-    transform: translateX(-12%) scaleY(1.08);
-  }
-  100% {
-    transform: translateX(0) scaleY(1);
-  }
-}
-
-.animate-wave {
-  animation: wave-motion 14s ease-in-out infinite;
-  transform-origin: bottom center;
-}
-
 .wave-divider svg {
   position: relative;
   display: block;
@@ -116,4 +98,39 @@ body {
   box-shadow: 0 0 15px rgba(230, 126, 34, 0.4);
   border-color: #E67E22;
 }
+
+/* Parallax Moving Wave Dividers */
+@keyframes waveMove {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.wave-animated {
+  display: block;
+  width: 200% !important;
+  min-width: 200%;
+  height: 45px;
+  animation: waveMove 16s linear infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave-animated-slow {
+  display: block;
+  width: 200% !important;
+  min-width: 200%;
+  height: 45px;
+  animation: waveMove 24s linear infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (min-width: 768px) {
+  .wave-animated, .wave-animated-slow {
+    height: 75px;
+  }
+}
+
 

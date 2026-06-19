@@ -81,10 +81,13 @@ export default async function Page() {
           </div>
         </div>
 
-        {/* Smooth Curved Bottom Divider (Dark to Cream) */}
-        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0]">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[150%] min-w-[150%] animate-wave h-[40px] md:h-[80px] fill-brand-cream">
-            <path d="M0,0 C300,100 900,0 1200,80 L1200,120 L0,120 Z"></path>
+        {/* Animated Double-Layered Wave Divider (Dark to Cream) */}
+        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0] h-[45px] md:h-[75px]">
+          <svg viewBox="0 0 2400 120" preserveAspectRatio="none" className="absolute bottom-0 left-0 w-full wave-animated-slow fill-brand-cream opacity-40">
+            <path d="M0,60 Q150,100 300,60 T600,60 T900,60 T1200,60 T1500,60 T1800,60 T2100,60 T2400,60 L2400,120 L0,120 Z" />
+          </svg>
+          <svg viewBox="0 0 2400 120" preserveAspectRatio="none" className="absolute bottom-0 left-0 w-full wave-animated fill-brand-cream">
+            <path d="M0,80 Q150,40 300,80 T600,80 T900,80 T1200,80 T1500,80 T1800,80 T2100,80 T2400,80 L2400,120 L0,120 Z" />
           </svg>
         </div>
       </section>
@@ -129,10 +132,13 @@ export default async function Page() {
         </div>
 
 
-        {/* Wavy transition (Cream to Dark Gray) */}
-        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0]">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[150%] min-w-[150%] animate-wave h-[40px] md:h-[80px] fill-brand-dark-light">
-            <path d="M0,0 C300,80 900,0 1200,100 L1200,120 L0,120 Z"></path>
+        {/* Animated Double-Layered Wave Divider (Cream to Dark Gray) */}
+        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0] h-[45px] md:h-[75px]">
+          <svg viewBox="0 0 2400 120" preserveAspectRatio="none" className="absolute bottom-0 left-0 w-full wave-animated-slow fill-brand-dark-light opacity-40">
+            <path d="M0,60 Q150,100 300,60 T600,60 T900,60 T1200,60 T1500,60 T1800,60 T2100,60 T2400,60 L2400,120 L0,120 Z" />
+          </svg>
+          <svg viewBox="0 0 2400 120" preserveAspectRatio="none" className="absolute bottom-0 left-0 w-full wave-animated fill-brand-dark-light">
+            <path d="M0,80 Q150,40 300,80 T600,80 T900,80 T1200,80 T1500,80 T1800,80 T2100,80 T2400,80 L2400,120 L0,120 Z" />
           </svg>
         </div>
       </section>
@@ -193,10 +199,13 @@ export default async function Page() {
           </div>
         </div>
 
-        {/* Wavy transition (Dark Gray to Cream) */}
-        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0]">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[150%] min-w-[150%] animate-wave h-[40px] md:h-[80px] fill-brand-cream">
-            <path d="M0,0 C300,100 900,0 1200,80 L1200,120 L0,120 Z"></path>
+        {/* Animated Double-Layered Wave Divider (Dark Gray to Cream) */}
+        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0] h-[45px] md:h-[75px]">
+          <svg viewBox="0 0 2400 120" preserveAspectRatio="none" className="absolute bottom-0 left-0 w-full wave-animated-slow fill-brand-cream opacity-40">
+            <path d="M0,60 Q150,100 300,60 T600,60 T900,60 T1200,60 T1500,60 T1800,60 T2100,60 T2400,60 L2400,120 L0,120 Z" />
+          </svg>
+          <svg viewBox="0 0 2400 120" preserveAspectRatio="none" className="absolute bottom-0 left-0 w-full wave-animated fill-brand-cream">
+            <path d="M0,80 Q150,40 300,80 T600,80 T900,80 T1200,80 T1500,80 T1800,80 T2100,80 T2400,80 L2400,120 L0,120 Z" />
           </svg>
         </div>
       </section>
@@ -224,10 +233,13 @@ export default async function Page() {
           <PackageGrid packages={pricingPackages} />
         </div>
 
-        {/* Wavy transition (Cream to Dark Footer) */}
-        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0]">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-[150%] min-w-[150%] animate-wave h-[40px] md:h-[80px] fill-brand-dark">
-            <path d="M0,0 C300,80 900,0 1200,100 L1200,120 L0,120 Z"></path>
+        {/* Animated Double-Layered Wave Divider (Cream to Dark Footer) */}
+        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-[0] h-[45px] md:h-[75px]">
+          <svg viewBox="0 0 2400 120" preserveAspectRatio="none" className="absolute bottom-0 left-0 w-full wave-animated-slow fill-brand-dark opacity-40">
+            <path d="M0,60 Q150,100 300,60 T600,60 T900,60 T1200,60 T1500,60 T1800,60 T2100,60 T2400,60 L2400,120 L0,120 Z" />
+          </svg>
+          <svg viewBox="0 0 2400 120" preserveAspectRatio="none" className="absolute bottom-0 left-0 w-full wave-animated fill-brand-dark">
+            <path d="M0,80 Q150,40 300,80 T600,80 T900,80 T1200,80 T1500,80 T1800,80 T2100,80 T2400,80 L2400,120 L0,120 Z" />
           </svg>
         </div>
       </section>
