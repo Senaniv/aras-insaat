@@ -2,7 +2,7 @@ import * as db from '@/lib/db';
 import Navbar from '@/components/Navbar';
 import ProjectGrid from '@/components/ProjectGrid';
 import PackageGrid from '@/components/PackageGrid';
-import { Home as HomeIcon, Hammer, Sparkles, Phone, MapPin } from 'lucide-react';
+import { Home as HomeIcon, Hammer, Sparkles, Phone, MapPin, Palette } from 'lucide-react';
 
 
 export const dynamic = 'force-dynamic';
@@ -163,7 +163,7 @@ export default async function Page() {
           </div>
 
           {/* Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Service 1 */}
             <div className="group bg-brand-dark-card border border-white/5 p-8 rounded-2xl transition-all duration-300 hover:border-brand-orange/30 hover:shadow-lg hover:shadow-brand-orange/5 hover:-translate-y-1 flex flex-col items-center text-center">
               <div className="w-16 h-16 rounded-2xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6 group-hover:bg-brand-orange group-hover:text-white transition-all duration-500">
@@ -194,6 +194,17 @@ export default async function Page() {
               <h3 className="text-xl font-bold font-outfit mb-3">Fasad & Dekorativ İşlər</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Binaların xarici görünüşünün modern dizaynı, kabançik, aqlay örtükləri, fasad izolyasiyası və rənglənmə xidmətləri.
+              </p>
+            </div>
+
+            {/* Service 4 */}
+            <div className="group bg-brand-dark-card border border-white/5 p-8 rounded-2xl transition-all duration-300 hover:border-brand-orange/30 hover:shadow-lg hover:shadow-brand-orange/5 hover:-translate-y-1 flex flex-col items-center text-center">
+              <div className="w-16 h-16 rounded-2xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6 group-hover:bg-brand-orange group-hover:text-white transition-all duration-500">
+                <Palette size={32} />
+              </div>
+              <h3 className="text-xl font-bold font-outfit mb-3">İnteryer & Eksteryer Dizayn</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Məkanlarınızın həm funksional, həm də vizual olaraq mükəmməl görünməsi üçün peşəkar 3D daxili və xarici dizayn layihələrinin hazırlanması.
               </p>
             </div>
           </div>
