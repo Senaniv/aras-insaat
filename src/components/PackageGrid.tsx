@@ -69,8 +69,8 @@ export default function PackageGrid({ packages }: PackageGridProps) {
                 className="w-1/2 shrink-0 px-1.5"
               >
                 <div className="group relative flex flex-col justify-between rounded-2xl bg-white border border-gray-200/60 p-3 transition-all duration-300 shadow-sm hover:shadow-xl hover:border-brand-orange/40 hover:-translate-y-1 h-full">
-                  {/* Card Accent */}
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-transparent group-hover:bg-brand-orange transition-all duration-300 rounded-t-2xl" />
+                  {/* Card Accent (Oval Indicator on Hover) */}
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-[6px] bg-transparent group-hover:bg-brand-orange transition-all duration-300 rounded-b-full" />
 
                   <div className="space-y-3">
                     {/* Package Name */}
@@ -160,8 +160,8 @@ export default function PackageGrid({ packages }: PackageGridProps) {
           key={pkg.id}
           className="group relative flex flex-col justify-between rounded-2xl bg-white border border-gray-200/60 p-4 md:p-6 transition-all duration-300 shadow-sm hover:shadow-xl hover:border-brand-orange/40 hover:-translate-y-1 h-full"
         >
-          {/* Card Accent (Top Border on Hover) */}
-          <div className="absolute top-0 left-0 right-0 h-1 bg-transparent group-hover:bg-brand-orange transition-all duration-300 rounded-t-2xl" />
+          {/* Card Accent (Oval Indicator on Hover) */}
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-[6px] bg-transparent group-hover:bg-brand-orange transition-all duration-300 rounded-b-full" />
 
           <div className="space-y-4">
             {/* Package Name */}
