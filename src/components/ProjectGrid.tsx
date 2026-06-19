@@ -1,7 +1,6 @@
 'use html';
 'use client';
 
-import { useState } from 'react';
 import { Project } from '@/lib/db';
 import { MapPin } from 'lucide-react';
 
@@ -10,41 +9,16 @@ interface ProjectGridProps {
 }
 
 export default function ProjectGrid({ initialProjects }: ProjectGridProps) {
-  const [selectedRegion, setSelectedRegion] = useState<string>('Hamısı');
-
-  const regions = ['Hamısı', 'Tovuz', 'Qazax', 'Ağstafa', 'Şəmkir'];
-
-  const filteredProjects = selectedRegion === 'Hamısı'
-    ? initialProjects
-    : initialProjects.filter(p => p.region === selectedRegion);
-
   return (
     <div className="space-y-8">
-      {/* Filter Buttons */}
-      <div className="flex flex-wrap justify-center gap-2 md:gap-3">
-        {regions.map((region) => (
-          <button
-            key={region}
-            onClick={() => setSelectedRegion(region)}
-            className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 border ${
-              selectedRegion === region
-                ? 'bg-brand-orange border-brand-orange text-white shadow-md shadow-brand-orange/20'
-                : 'bg-white/80 border-gray-200 text-gray-700 hover:bg-brand-orange hover:text-white hover:border-brand-orange'
-            }`}
-          >
-            {region}
-          </button>
-        ))}
-      </div>
-
       {/* Grid of Projects */}
-      {filteredProjects.length === 0 ? (
-        <div className="text-center py-12 text-gray-500">
-          Bu bölgədə hələ ki layihə əlavə edilməyib.
+      {initialProjects.length === 0 ? (
+        <div className="text-center py-12 text-gray-500 font-medium">
+          Hələ ki heç bir layihə əlavə edilməyib.
         </div>
       ) : (
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
-          {filteredProjects.map((project) => (
+          {initialProjects.map((project) => (
             <div
               key={project.id}
               className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-brand-orange/30 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full"
