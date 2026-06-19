@@ -54,11 +54,18 @@ export default async function Page() {
           </span>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-outfit tracking-tight text-white leading-tight">
-            {heroTitle.split(' ').map((word, i) => (
-              <span key={i} className={i >= heroTitle.split(' ').length - 2 ? "text-brand-orange block sm:inline" : ""}>
-                {word}{' '}
-              </span>
-            ))}
+            {heroTitle === 'Xəyallarınıza açılan qapı' ? (
+              <>
+                <span className="sm:inline block">Xəyallarınıza</span>{' '}
+                <span className="text-brand-orange block sm:inline">açılan qapı</span>
+              </>
+            ) : (
+              heroTitle.split(' ').map((word, i) => (
+                <span key={i} className={i >= heroTitle.split(' ').length - 2 ? "text-brand-orange block sm:inline" : ""}>
+                  {word}{' '}
+                </span>
+              ))
+            )}
           </h1>
 
           <p className="max-w-2xl mx-auto text-lg sm:text-xl text-gray-300 leading-relaxed font-light">
@@ -296,7 +303,9 @@ export default async function Page() {
               <h4 className="text-sm font-bold font-outfit text-brand-orange tracking-widest uppercase">
                 ƏLAQƏ VƏ ÜNVAN
               </h4>
-              <ul className="space-y-4 text-sm text-gray-300">
+              
+              {/* Desktop version (hidden on mobile, visible on md and up) */}
+              <ul className="hidden md:flex flex-col space-y-4 text-sm text-gray-300">
                 <li className="flex items-center gap-3.5">
                   <span className="w-12 h-12 rounded-full bg-brand-orange/10 flex items-center justify-center text-brand-orange border border-brand-orange/20 shrink-0 shadow-sm">
                     <Phone size={18} />
@@ -321,6 +330,48 @@ export default async function Page() {
                     </div>
                   </li>
                 )}
+                <li className="flex items-center gap-3.5">
+                  <span className="w-12 h-12 rounded-full bg-brand-orange/10 flex items-center justify-center text-brand-orange border border-brand-orange/20 shrink-0 shadow-sm">
+                    <MapPin size={18} />
+                  </span>
+                  <div>
+                    <span className="text-xs text-gray-500 uppercase font-semibold block">Ünvanımız</span>
+                    <span className="font-semibold text-gray-200">{address}</span>
+                  </div>
+                </li>
+              </ul>
+
+              {/* Mobile version (visible on mobile, hidden on md and up) */}
+              <ul className="md:hidden flex flex-col space-y-4 text-sm text-gray-300">
+                <li className="flex items-center gap-3.5">
+                  <span className="w-12 h-12 rounded-full bg-brand-orange/10 flex items-center justify-center text-brand-orange border border-brand-orange/20 shrink-0 shadow-sm">
+                    <Phone size={18} />
+                  </span>
+                  <div>
+                    <span className="text-xs text-gray-500 uppercase font-semibold block">Zəng üçün</span>
+                    <a href={`tel:${cleanPhone1}`} className="hover:text-brand-orange font-bold transition-colors">
+                      {phone1}
+                    </a>
+                  </div>
+                </li>
+                <li className="flex items-center gap-3.5">
+                  <span className="w-12 h-12 rounded-full bg-brand-orange/10 flex items-center justify-center text-brand-orange border border-brand-orange/20 shrink-0 shadow-sm">
+                    <svg className="w-5.5 h-5.5 fill-current text-brand-orange" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.597-1.006-5.04-2.838-6.874-1.832-1.832-4.272-2.84-6.877-2.842-5.409 0-9.809 4.394-9.812 9.8.001 2.052.541 4.053 1.564 5.823l-.99 3.616 3.71-.973zm10.457-7.112c-.29-.145-1.713-.845-1.979-.942-.266-.097-.459-.145-.653.145-.193.29-.749.942-.918 1.134-.169.193-.338.217-.628.072-1.29-.647-2.133-1.085-2.943-2.502-.213-.372.213-.346.61-.1.356-.22.399-.29.593-.483.193-.193.097-.362-.048-.653-.145-.29-.653-1.573-.894-2.152-.236-.569-.475-.491-.653-.5-.169-.008-.362-.01-.555-.01-.193 0-.507.072-.773.362-.266.29-1.014.99-1.014 2.415 0 1.425 1.038 2.802 1.182 2.995.145.193 2.043 3.12 4.95 4.378.691.299 1.232.478 1.654.612.695.22 1.329.19 1.83.115.559-.085 1.713-.7 1.954-1.377.242-.676.242-1.256.169-1.377-.073-.121-.266-.193-.556-.338z" />
+                    </svg>
+                  </span>
+                  <div>
+                    <span className="text-xs text-gray-500 uppercase font-semibold block">WhatsApp</span>
+                    <a 
+                      href={`https://wa.me/994518885599`} 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-brand-orange font-bold transition-colors"
+                    >
+                      {phone1}
+                    </a>
+                  </div>
+                </li>
                 <li className="flex items-center gap-3.5">
                   <span className="w-12 h-12 rounded-full bg-brand-orange/10 flex items-center justify-center text-brand-orange border border-brand-orange/20 shrink-0 shadow-sm">
                     <MapPin size={18} />
@@ -383,7 +434,33 @@ export default async function Page() {
           </div>
 
           {/* Mandatory Copyright & Signature */}
-          <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+          
+          {/* Mobile version (centered, signature at the very end on a clean line) */}
+          <div className="md:hidden flex flex-col items-center text-center gap-3 text-xs text-gray-500 mt-6 pt-4 border-t border-white/5">
+            <div className="flex items-center gap-3 text-gray-400">
+              <a href="#" className="hover:text-brand-orange transition-colors">Gizlilik Siyasəti</a>
+              <span>•</span>
+              <a href="#" className="hover:text-brand-orange transition-colors">İstifadə Şərtləri</a>
+            </div>
+            <p className="text-[11px] text-gray-500">
+              &copy; {new Date().getFullYear()} Aras İnşaat. Bütün hüquqlar qorunur.
+            </p>
+            <p className="text-[11px] text-gray-400 whitespace-nowrap">
+              Sayt{" "}
+              <a 
+                href="https://www.instagram.com/pixel_digital_services?igsh=MTB1b25kZWQ4YWFrZQ%3D%3D" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-brand-orange hover:underline font-bold transition-colors"
+              >
+                "Pixel Digital Services"
+              </a>{" "}
+              tərəfindən hazırlanmışdır
+            </p>
+          </div>
+
+          {/* Desktop version (hidden on mobile, unchanged original layout) */}
+          <div className="hidden md:flex flex-row items-center justify-between text-xs text-gray-500 gap-4 mt-6 pt-4 border-t border-white/5">
             <p>
               &copy; {new Date().getFullYear()} Aras İnşaat. Bütün hüquqlar qorunur.
             </p>
