@@ -275,8 +275,8 @@ export default async function Page() {
               </h4>
               <ul className="space-y-4 text-sm text-gray-300">
                 <li className="flex items-center gap-3.5">
-                  <span className="w-10 h-10 rounded-full bg-brand-orange/10 flex items-center justify-center text-brand-orange border border-brand-orange/20 shrink-0">
-                    <Phone size={16} />
+                  <span className="w-12 h-12 rounded-full bg-brand-orange/10 flex items-center justify-center text-brand-orange border border-brand-orange/20 shrink-0 shadow-sm">
+                    <Phone size={18} />
                   </span>
                   <div>
                     <span className="text-xs text-gray-500 uppercase font-semibold block">Zəng üçün</span>
@@ -287,8 +287,8 @@ export default async function Page() {
                 </li>
                 {phone2 && (
                   <li className="flex items-center gap-3.5">
-                    <span className="w-10 h-10 rounded-full bg-brand-orange/10 flex items-center justify-center text-brand-orange border border-brand-orange/20 shrink-0">
-                      <Phone size={16} />
+                    <span className="w-12 h-12 rounded-full bg-brand-orange/10 flex items-center justify-center text-brand-orange border border-brand-orange/20 shrink-0 shadow-sm">
+                      <Phone size={18} />
                     </span>
                     <div>
                       <span className="text-xs text-gray-500 uppercase font-semibold block">Alternativ</span>
@@ -299,8 +299,8 @@ export default async function Page() {
                   </li>
                 )}
                 <li className="flex items-center gap-3.5">
-                  <span className="w-10 h-10 rounded-full bg-brand-orange/10 flex items-center justify-center text-brand-orange border border-brand-orange/20 shrink-0">
-                    <MapPin size={16} />
+                  <span className="w-12 h-12 rounded-full bg-brand-orange/10 flex items-center justify-center text-brand-orange border border-brand-orange/20 shrink-0 shadow-sm">
+                    <MapPin size={18} />
                   </span>
                   <div>
                     <span className="text-xs text-gray-500 uppercase font-semibold block">Ünvanımız</span>
@@ -314,15 +314,15 @@ export default async function Page() {
             <div className="md:col-span-3 space-y-6 md:border-l md:border-white/10 md:pl-8">
               {/* Logo integrated */}
               <div className="flex items-center gap-3">
-                <img src="/logo.png" alt="Aras İnşaat Logo" className="h-14 w-14 object-contain bg-white/5 rounded-full p-0.5 shrink-0" />
+                <img src="/logo.png" alt="Aras İnşaat Logo" className="h-18 w-18 object-contain bg-white/5 rounded-full p-1 shrink-0 shadow-md" />
                 <div className="flex flex-col leading-tight">
-                  <span className="text-xl font-black font-outfit tracking-wide text-white">
+                  <span className="text-2xl font-black font-outfit tracking-wide text-white">
                     ARAS
                   </span>
-                  <span className="text-[10px] tracking-widest text-brand-orange font-bold font-outfit uppercase">
+                  <span className="text-xs tracking-widest text-brand-orange font-bold font-outfit uppercase font-extrabold">
                     Tikinti & Təmir
                   </span>
-                  <span className="text-[8px] tracking-widest text-gray-500 font-outfit">
+                  <span className="text-[9px] tracking-widest text-gray-500 font-outfit font-semibold uppercase">
                     BUILT TO INSPIRE
                   </span>
                 </div>
@@ -336,10 +336,10 @@ export default async function Page() {
                     href={instagramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-brand-orange hover:border-brand-orange transition-all duration-300 border border-white/10"
+                    className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-brand-orange hover:border-brand-orange transition-all duration-300 border border-white/10 shadow-md"
                     title="Instagram"
                   >
-                    <svg className="w-4.5 h-4.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-5.5 h-5.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
                     </svg>
                   </a>
@@ -347,10 +347,10 @@ export default async function Page() {
                     href={`https://wa.me/994518885599`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-brand-orange hover:border-brand-orange transition-all duration-300 border border-white/10"
+                    className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-brand-orange hover:border-brand-orange transition-all duration-300 border border-white/10 shadow-md"
                     title="WhatsApp"
                   >
-                    <svg className="w-4.5 h-4.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-5.5 h-5.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.597-1.006-5.04-2.838-6.874-1.832-1.832-4.272-2.84-6.877-2.842-5.409 0-9.809 4.394-9.812 9.8.001 2.052.541 4.053 1.564 5.823l-.99 3.616 3.71-.973zm10.457-7.112c-.29-.145-1.713-.845-1.979-.942-.266-.097-.459-.145-.653.145-.193.29-.749.942-.918 1.134-.169.193-.338.217-.628.072-1.29-.647-2.133-1.085-2.943-2.502-.213-.372.213-.346.61-.1.356-.22.399-.29.593-.483.193-.193.097-.362-.048-.653-.145-.29-.653-1.573-.894-2.152-.236-.569-.475-.491-.653-.5-.169-.008-.362-.01-.555-.01-.193 0-.507.072-.773.362-.266.29-1.014.99-1.014 2.415 0 1.425 1.038 2.802 1.182 2.995.145.193 2.043 3.12 4.95 4.378.691.299 1.232.478 1.654.612.695.22 1.329.19 1.83.115.559-.085 1.713-.7 1.954-1.377.242-.676.242-1.256.169-1.377-.073-.121-.266-.193-.556-.338z" />
                     </svg>
                   </a>
