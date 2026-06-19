@@ -1,11 +1,29 @@
 {
   "site_content": [
-    { "key": "hero_title", "value": "Xəyallarınıza açılan qapı" },
-    { "key": "hero_subtitle", "value": "Etibarlı inşaat, keyfiyyətli həyat!" },
-    { "key": "phone_1", "value": "051 888 55 99" },
-    { "key": "phone_2", "value": "070 500 29 49" },
-    { "key": "address", "value": "Tovuz rayonu" },
-    { "key": "instagram", "value": "https://www.instagram.com/aras.insaat/" }
+    {
+      "key": "hero_title",
+      "value": "Xəyallarınıza açılan qapı"
+    },
+    {
+      "key": "hero_subtitle",
+      "value": "Etibarlı inşaat, keyfiyyətli həyat!"
+    },
+    {
+      "key": "phone_1",
+      "value": "051 888 55 99"
+    },
+    {
+      "key": "phone_2",
+      "value": "070 500 29 49"
+    },
+    {
+      "key": "address",
+      "value": "Tovuz rayonu"
+    },
+    {
+      "key": "instagram",
+      "value": "https://www.instagram.com/aras.insaat/"
+    }
   ],
   "projects": [
     {

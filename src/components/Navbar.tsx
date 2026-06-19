@@ -50,11 +50,18 @@ export default function Navbar({ phone1 }: NavbarProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a href="#" className="flex items-center gap-2 group">
-              <span className="text-2xl font-extrabold font-outfit tracking-wider text-white">
-                ARAS <span className="text-brand-orange">İNŞAAT</span>
-              </span>
+            <a href="#" className="flex items-center gap-3 group">
+              <img src="/logo.png" alt="Aras İnşaat Logo" className="h-10 w-10 md:h-12 md:w-12 object-contain bg-white/5 rounded-full p-0.5" />
+              <div className="flex flex-col leading-tight">
+                <span className="text-lg md:text-xl font-black font-outfit tracking-wide text-white">
+                  ARAS
+                </span>
+                <span className="text-[9px] md:text-[10px] tracking-widest text-brand-orange font-bold font-outfit uppercase">
+                  Tikinti & Təmir
+                </span>
+              </div>
             </a>
+
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-8">
