@@ -20,7 +20,7 @@ export default async function Page() {
   const phone1 = siteContent.phone_1 || '051 888 55 99';
   const phone2 = siteContent.phone_2 || '070 500 29 49';
   const address = siteContent.address || 'Tovuz rayonu';
-  const instagramUrl = siteContent.instagram || 'https://www.instagram.com/aras.insaat/';
+  const instagramUrl = siteContent.instagram || 'https://www.instagram.com/aras_inshaat/';
 
   const cleanPhone1 = phone1.replace(/\s+/g, '');
   const cleanPhone2 = phone2.replace(/\s+/g, '');
