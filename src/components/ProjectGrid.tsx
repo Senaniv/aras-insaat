@@ -51,14 +51,14 @@ export default function ProjectGrid({ initialProjects }: ProjectGridProps) {
         {projectsToDisplay.map((project) => (
           <div
             key={project.id}
-            className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-brand-orange/30 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full"
+            className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-brand-orange/30 active:border-brand-orange/30 shadow-sm hover:shadow-xl active:shadow-xl transition-all duration-300 flex flex-col h-full"
           >
             {/* Image Container */}
             <div className="relative aspect-[4/3] w-full overflow-hidden bg-gray-100">
               <img
                 src={project.image_url}
                 alt={project.title}
-                className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+                className="object-cover w-full h-full group-hover:scale-110 group-active:scale-110 transition-transform duration-500"
                 loading="lazy"
               />
               {/* Region Badge */}
@@ -71,7 +71,7 @@ export default function ProjectGrid({ initialProjects }: ProjectGridProps) {
             {/* Project Info */}
             <div className="p-3 md:p-5 flex-1 flex flex-col justify-between">
               <div>
-                <h3 className="font-outfit text-sm md:text-lg font-bold text-gray-900 line-clamp-1 group-hover:text-brand-orange transition-colors">
+                <h3 className="font-outfit text-sm md:text-lg font-bold text-gray-900 line-clamp-1 group-hover:text-brand-orange group-active:text-brand-orange transition-colors">
                   {project.title}
                 </h3>
                 {project.description && (
@@ -87,7 +87,7 @@ export default function ProjectGrid({ initialProjects }: ProjectGridProps) {
 
       {/* Pagination controls only on mobile */}
       {isMobile && totalPages > 1 && (
-        <div className="flex items-center justify-center gap-6 pt-4">
+        <div className="flex items-center justify-center gap-4 pt-4">
           <button
             onClick={() => setCurrentPage((prev) => (prev > 0 ? prev - 1 : totalPages - 1))}
             className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-700 bg-white shadow-sm active:bg-gray-100 transition-colors"
@@ -95,9 +95,6 @@ export default function ProjectGrid({ initialProjects }: ProjectGridProps) {
           >
             <ChevronLeft size={20} />
           </button>
-          <span className="text-sm font-medium text-gray-600">
-            {currentPage + 1} / {totalPages}
-          </span>
           <button
             onClick={() => setCurrentPage((prev) => (prev < totalPages - 1 ? prev + 1 : 0))}
             className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-700 bg-white shadow-sm active:bg-gray-100 transition-colors"

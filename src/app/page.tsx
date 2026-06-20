@@ -172,8 +172,8 @@ export default async function Page() {
           {/* Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Service 1 */}
-            <div className="group bg-brand-dark-card border border-white/5 p-8 rounded-2xl transition-all duration-300 hover:border-brand-orange/30 hover:shadow-lg hover:shadow-brand-orange/5 hover:-translate-y-1 flex flex-col items-center text-center">
-              <div className="w-16 h-16 rounded-2xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6 group-hover:bg-brand-orange group-hover:text-white transition-all duration-500">
+            <div className="group bg-brand-dark-card border border-white/5 p-8 rounded-2xl transition-all duration-300 hover:border-brand-orange/30 active:border-brand-orange/30 hover:shadow-lg active:shadow-lg hover:shadow-brand-orange/5 active:shadow-brand-orange/5 hover:-translate-y-1 active:-translate-y-1 flex flex-col items-center text-center">
+              <div className="w-16 h-16 rounded-2xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6 group-hover:bg-brand-orange group-hover:text-white group-active:bg-brand-orange group-active:text-white transition-all duration-500">
                 <HomeIcon size={32} />
               </div>
               <h3 className="text-xl font-bold font-outfit mb-3">Yaşayış Evlərinin Tikintisi</h3>
@@ -183,8 +183,8 @@ export default async function Page() {
             </div>
 
             {/* Service 2 */}
-            <div className="group bg-brand-dark-card border border-white/5 p-8 rounded-2xl transition-all duration-300 hover:border-brand-orange/30 hover:shadow-lg hover:shadow-brand-orange/5 hover:-translate-y-1 flex flex-col items-center text-center">
-              <div className="w-16 h-16 rounded-2xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6 group-hover:bg-brand-orange group-hover:text-white transition-all duration-500">
+            <div className="group bg-brand-dark-card border border-white/5 p-8 rounded-2xl transition-all duration-300 hover:border-brand-orange/30 active:border-brand-orange/30 hover:shadow-lg active:shadow-lg hover:shadow-brand-orange/5 active:shadow-brand-orange/5 hover:-translate-y-1 active:-translate-y-1 flex flex-col items-center text-center">
+              <div className="w-16 h-16 rounded-2xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6 group-hover:bg-brand-orange group-hover:text-white group-active:bg-brand-orange group-active:text-white transition-all duration-500">
                 <Hammer size={32} />
               </div>
               <h3 className="text-xl font-bold font-outfit mb-3">Təmir & Yenidənqurma</h3>
@@ -194,8 +194,8 @@ export default async function Page() {
             </div>
 
             {/* Service 3 */}
-            <div className="group bg-brand-dark-card border border-white/5 p-8 rounded-2xl transition-all duration-300 hover:border-brand-orange/30 hover:shadow-lg hover:shadow-brand-orange/5 hover:-translate-y-1 flex flex-col items-center text-center">
-              <div className="w-16 h-16 rounded-2xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6 group-hover:bg-brand-orange group-hover:text-white transition-all duration-500">
+            <div className="group bg-brand-dark-card border border-white/5 p-8 rounded-2xl transition-all duration-300 hover:border-brand-orange/30 active:border-brand-orange/30 hover:shadow-lg active:shadow-lg hover:shadow-brand-orange/5 active:shadow-brand-orange/5 hover:-translate-y-1 active:-translate-y-1 flex flex-col items-center text-center">
+              <div className="w-16 h-16 rounded-2xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6 group-hover:bg-brand-orange group-hover:text-white group-active:bg-brand-orange group-active:text-white transition-all duration-500">
                 <Sparkles size={32} />
               </div>
               <h3 className="text-xl font-bold font-outfit mb-3">Fasad & Dekorativ İşlər</h3>
@@ -205,8 +205,8 @@ export default async function Page() {
             </div>
 
             {/* Service 4 */}
-            <div className="group bg-brand-dark-card border border-white/5 p-8 rounded-2xl transition-all duration-300 hover:border-brand-orange/30 hover:shadow-lg hover:shadow-brand-orange/5 hover:-translate-y-1 flex flex-col items-center text-center">
-              <div className="w-16 h-16 rounded-2xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6 group-hover:bg-brand-orange group-hover:text-white transition-all duration-500">
+            <div className="group bg-brand-dark-card border border-white/5 p-8 rounded-2xl transition-all duration-300 hover:border-brand-orange/30 active:border-brand-orange/30 hover:shadow-lg active:shadow-lg hover:shadow-brand-orange/5 active:shadow-brand-orange/5 hover:-translate-y-1 active:-translate-y-1 flex flex-col items-center text-center">
+              <div className="w-16 h-16 rounded-2xl bg-brand-orange/10 border border-brand-orange/20 flex items-center justify-center text-brand-orange mb-6 group-hover:bg-brand-orange group-hover:text-white group-active:bg-brand-orange group-active:text-white transition-all duration-500">
                 <Palette size={32} />
               </div>
               <h3 className="text-xl font-bold font-outfit mb-3">İnteryer & Eksteryer Dizayn</h3>

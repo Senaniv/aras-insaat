@@ -12,6 +12,7 @@ interface PackageGridProps {
 export default function PackageGrid({ packages }: PackageGridProps) {
   const [isMobile, setIsMobile] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
@@ -28,23 +29,26 @@ export default function PackageGrid({ packages }: PackageGridProps) {
   useEffect(() => {
     if (!isMobile) {
       setActiveIndex(0);
+      setIsPlaying(true);
     }
   }, [isMobile]);
 
   // Autoplay effect
   useEffect(() => {
-    if (!isMobile || packages.length <= 2) return;
+    if (!isMobile || packages.length <= 2 || !isPlaying) return;
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
     }, 5000);
     return () => clearInterval(interval);
-  }, [isMobile, packages.length, maxIndex]);
+  }, [isMobile, packages.length, maxIndex, isPlaying]);
 
   const handlePrev = () => {
+    setIsPlaying(false);
     setActiveIndex((prev) => (prev > 0 ? prev - 1 : maxIndex));
   };
 
   const handleNext = () => {
+    setIsPlaying(false);
     setActiveIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
   };
 
@@ -67,14 +71,15 @@ export default function PackageGrid({ packages }: PackageGridProps) {
               <div
                 key={pkg.id}
                 className="w-1/2 shrink-0 px-1.5"
+                onClick={() => setIsPlaying(false)}
               >
-                <div className="group relative flex flex-col justify-between rounded-2xl bg-white border border-gray-200/60 p-3 transition-all duration-300 shadow-sm hover:shadow-xl hover:border-brand-orange/40 hover:-translate-y-1 h-full">
+                <div className="group relative flex flex-col justify-between rounded-2xl bg-white border border-gray-200/60 p-3 transition-all duration-300 shadow-sm hover:shadow-xl active:shadow-xl hover:border-brand-orange/40 active:border-brand-orange/40 hover:-translate-y-1 active:-translate-y-1 h-full">
                   {/* Card Accent (Oval Indicator on Hover) */}
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-[6px] bg-transparent group-hover:bg-brand-orange transition-all duration-300 rounded-b-full" />
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-[6px] bg-transparent group-hover:bg-brand-orange group-active:bg-brand-orange transition-all duration-300 rounded-b-full" />
 
                   <div className="space-y-3">
                     {/* Package Name */}
-                    <h3 className="font-outfit text-xs font-bold text-gray-900 group-hover:text-brand-orange transition-colors line-clamp-1">
+                    <h3 className="font-outfit text-xs font-bold text-gray-900 group-hover:text-brand-orange group-active:text-brand-orange transition-colors line-clamp-1">
                       {pkg.name}
                     </h3>
 
@@ -129,7 +134,7 @@ export default function PackageGrid({ packages }: PackageGridProps) {
 
         {/* Carousel Navigation Arrows */}
         {packages.length > 2 && (
-          <div className="flex items-center justify-center gap-6 pt-4">
+          <div className="flex items-center justify-center gap-4 pt-4">
             <button
               onClick={handlePrev}
               className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-700 bg-white shadow-sm active:bg-gray-100 transition-colors"
@@ -137,9 +142,6 @@ export default function PackageGrid({ packages }: PackageGridProps) {
             >
               <ChevronLeft size={20} />
             </button>
-            <span className="text-sm font-medium text-gray-600">
-              {activeIndex + 1} / {packages.length - 1}
-            </span>
             <button
               onClick={handleNext}
               className="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-700 bg-white shadow-sm active:bg-gray-100 transition-colors"
